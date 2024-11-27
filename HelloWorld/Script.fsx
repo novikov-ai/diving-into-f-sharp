@@ -1,8 +1,8 @@
-let days_in_month = function
-    | 1 | 3 | 5 | 7 | 8 | 10| 12 -> 31 
-    | 2 -> 28 // February (non-leap year)
-    | 4 | 6 | 9 | 11 -> 30
-    | _ -> 0 // Invalid month
+let rec fibo = function
+    | 0 -> 0
+    | 1 -> 1
+    | n -> fibo (n-1) + fibo (n-2)
 
-let v = days_in_month(13)
-printfn "%d" v
+let value = fibo(5)
+
+printfn "%d" value
