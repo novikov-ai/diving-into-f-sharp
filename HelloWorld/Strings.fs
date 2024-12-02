@@ -1,7 +1,7 @@
 // 17.1
 let rec pow = function
     | (s,1) -> s
-    | (s,n) -> s + "\n" + pow(s,n-1)
+    | (s,n) -> s + pow(s,n-1)
 
 // 17.2
 let rec isIthChar (s,n,c) =
