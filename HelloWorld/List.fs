@@ -10,5 +10,4 @@ let rec dnto = function
 
 // 34.3
 let rec evenn = function
-  | -1 -> []
-  | n -> if n%2 = 0 then evenn(n-1) @ [n] else evenn(n-1)
+  | n -> if n <= 0 then [] else (evenn (n-1) @ [2*(n-1)])
