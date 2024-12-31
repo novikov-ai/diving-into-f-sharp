@@ -43,7 +43,8 @@ let rec minus (xs1, xs2) =
 
 // 40.3.1
 let rec smallest = function
-  | list -> List.min list
+  | [] -> None
+  | list -> Some (List.min list)
 
 // 40.3.2
 let rec delete (n, xs) = 
