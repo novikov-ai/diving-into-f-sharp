@@ -1,8 +1,16 @@
-let rec fibo = function
-    | 0 -> 0
-    | 1 -> 1
-    | n -> fibo (n-1) + fibo (n-2)
+// 49.4. Задания
 
-let value = fibo(5)
+// 49.5.1. Определите последовательность чётных положительных чисел.
 
-printfn "%d" value
+
+let seq_seq = 
+  Seq.initInfinite (fun i -> if i % 2 = 0 then i else -i)
+  // 0 -1 1 -2 2 -3 3
+  // 0 1  2 3 4 5 6
+  // 0 2  1 5 2 8 3
+  
+
+printfn "%A" seq_seq
+
+
+// 49.5.3. Определите последовательность 0, -1, 1, -2, 2, -3, 3, ...
