@@ -3,7 +3,7 @@ let even_seq =
   Seq.initInfinite (fun i -> i+i)
 
 // 49.5.2
-let even_seq = 
+let fac_seq = 
   let rec fact n = 
     if n = 0 then 1 
     elif n = 1 then 1 
