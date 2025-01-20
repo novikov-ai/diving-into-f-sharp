@@ -1,6 +1,6 @@
 // 49.5.1
 let even_seq = 
-  Seq.removeAt 0 (Seq.initInfinite (fun i -> 2*i))
+  Seq.skip 1 (Seq.initInfinite (fun i -> 2*i))
 
 // 49.5.2
 let fac_seq = 
